@@ -21,5 +21,5 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* https://git.heroku.com/polar-cove-17407.git
 # rsturo
