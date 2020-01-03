@@ -8,40 +8,32 @@ module ApplicationHelper
     end
   end
 end
-def yeller(a)
-  b = a.map {|i| i.upcase}
-  puts b.join
-end
-def random_subdomain
-  moji = ('a'..'z').to_a
-  num = (0..9).to_a
-  (moji + num).shuffle[0..7].join
-end
-def string_shuffle(s)
-  s.split('').shuffle.join
-end
+# def yeller(a)
+#   b = a.map {|i| i.upcase}
+#   puts b.join
+# end
+# def random_subdomain
+#   moji = ('a'..'z').to_a
+#   num = (0..9).to_a
+#   (moji + num).shuffle[0..7].join
+# end
+# def string_shuffle(s)
+#   s.split('').shuffle.join
+# end
 
-def shuffle(s)
-  if s.is_a?(Array)
-    s.join.split('').shuffle.join
-  else
-    s.split('').shuffle.join
-  end
-end
+# def shuffle(s)
+#   if s.is_a?(Array)
+#     s.join.split('').shuffle.join
+#   else
+#     s.split('').shuffle.join
+#   end
+# end
 
-class String
-  def palindrome?
-    self == reverse
-  end
-  def shuffle
-    split('').shuffle.join
-  end
-end
-
-class Word < String             # WordクラスはStringクラスを継承する
-  >>   # 文字列が回文であればtrueを返す
-  >>   def palindrome?
-  >>     self == self.reverse        # selfは文字列自身を表します
-  >>   end
-  >> end
-  => :palindrome?
+# class String
+#   def palindrome?
+#     self == reverse
+#   end
+#   def shuffle
+#     split('').shuffle.join
+#   end
+# end
