@@ -1,0 +1,8 @@
+<%= form_for @coupon, url: {action: 'finish'} do |f| %>
+  <%= f.hidden_field :user_id %>
+  <%= f.hidden_field :buying %>
+  <%= f.label :user_id %>
+  <%= f.text_field :user_id, disabled: true%>
+  <%= f.check_box :buying, {disabled: true}, :buy, :not_buy %>
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,6 @@
+<%= form_for @coupon, url: {action: 'confirm'} do |f| %>
+  <%= f.label :user_id %>
+  <%= f.text_field :user_id%>
+  <%= f.check_box :buying, {}, :buy, :not_buy %>
+  <%= f.submit %>
+<% end %>
